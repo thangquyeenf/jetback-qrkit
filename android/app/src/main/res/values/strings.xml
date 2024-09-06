@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">qrkit</string>
+    <string name="choose_image">Choose image from</string>
+</resources>
