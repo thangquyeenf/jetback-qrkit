@@ -3,6 +3,15 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.MANAGE_EMBEDDED_SUBSCRIPTIONS" />
+    <permission android:protectionLevel="signature" android:name="com.qrkit.permission.BROADCAST" />
+    <uses-permission android:name="com.qrkit.permission.BROADCAST"/>
+
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
@@ -23,5 +32,6 @@
         </intent-filter>
       </activity>
       <activity android:name=".activities.QRScannerActivity" />
+      <activity android:name=".activities.SimManageActivity" />
     </application>
 </manifest>

@@ -1,3 +1,25 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "moduleResolution": "node", 
+    "resolveJsonModule": true, 
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "react-native": [
+        "node_modules/react-native"
+      ]
+    },
+    "types": ["react-native"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.svg",
+    "src/**/*.png",
+    "i18n.config.js"
+  ]
 }

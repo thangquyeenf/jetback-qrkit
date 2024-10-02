@@ -11,6 +11,8 @@ import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.soloader.SoLoader
 import com.qrkit.modules.QRModule.QRPackage
+import com.qrkit.modules.SimManageModule.SimManagePackage
+
 class MainApplication : Application(), ReactApplication {
 
   override val reactNativeHost: ReactNativeHost =
@@ -20,6 +22,7 @@ class MainApplication : Application(), ReactApplication {
               // Packages that cannot be autolinked yet can be added manually here, for example:
               // add(MyReactNativePackage())
               add(QRPackage())
+              add(SimManagePackage())
             }
 
         override fun getJSMainModuleName(): String = "index"
